@@ -26,3 +26,13 @@ h1, h2, h3, h4 {
 p{
   margin-bottom: 15px;
 }
+
+button, input[type="button"], input[type="submit"] {
+  font-family: $font--heading;
+  text-transform: uppercase;
+  padding: 1em 2em;
+}
+
+input + button, input + input[type="button"], input + input[type="submit"] {
+  padding: 1em 2em;
+}

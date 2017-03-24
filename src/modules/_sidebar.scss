@@ -1,3 +1,11 @@
 .widget {
     box-shadow: $shadow--light;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: $font--size--body;
+    .widget-title {
+        font-size: 1em;
+        border-bottom: 1px solid $color--primary;
+        padding-bottom: 20px;
+    }
 }
