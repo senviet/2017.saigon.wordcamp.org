@@ -1,0 +1,6 @@
+.navigation-top{
+  .wrap{
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}

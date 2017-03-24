@@ -2,3 +2,8 @@ body{
   font-family: $font--body;
   background: $color--body-background;
 }
+
+.wrap {
+  @include make-container();
+  @include make-container-max-widths();
+}

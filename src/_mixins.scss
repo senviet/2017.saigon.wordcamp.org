@@ -94,6 +94,24 @@
   }
 }
 
+@mixin make-container($gutter: 30px) {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: ($gutter / 2);
+  padding-left:  ($gutter / 2);
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      width: $container-max-width;
+      max-width: 100%;
+    }
+  }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue / 16) * 1rem;
