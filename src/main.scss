@@ -1,4 +1,8 @@
 @import "variables";
 @import "mixins";
-@import "elements";
+@import "base";
+@import "modules/form";
+@import "modules/site-header";
+@import "modules/sidebar";
+@import "modules/site-footer";
 @import "pages/home";
