@@ -6,12 +6,12 @@ $color--body: #646c77;
 $color--link: $color--secondary;
 $color--link-hover: $color--secondary;
 
-$font--body: 'Source Sans Pro';
-$font--heading: 'montserrat';
+$font--body: 'Source Sans Pro', sans-serif;
+$font--heading: 'Montserrat', sans-serif;
 $font--size--body: 17px;
 $font--line-height--body: 30px;
 
-$shadow--light: '';
+$shadow--light: 0 0 26px 0 rgba(0,0,0,.12);
 $shadow--medium: '';
 $shadow--hard: '';
 
