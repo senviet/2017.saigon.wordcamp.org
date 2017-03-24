@@ -1,7 +1,4 @@
 @import "variables";
 @import "mixins";
-
-body{
-  font-family: $font--body;
-  background: $color--body-background;
-}
+@import "elements";
+@import "pages/home";
