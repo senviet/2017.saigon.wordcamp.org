@@ -1,5 +1,7 @@
 @import "variables";
+@import "mixins";
+
 body{
-  background: red;
-  display: flex;
+  font-family: $font--body;
+  background: $color--body-background;
 }
