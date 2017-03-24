@@ -1,12 +1,15 @@
-$color--primary: #fcfcfc;
-$color--secondary: #fcfcfc;
+$color--primary: #ff5722;
+$color--secondary: #00bcd4;
 $color--body-background: #fcfcfc;
+$color--body: #646c77;
 
 $color--link: $color--primary;
-$color--link-hover: $color--primary;
+$color--link-hover: $color--secondary;
 
-$font--body: 'Open Sans';
-$font--heading: 'Roboto';
+$font--body: 'Source Sans Pro';
+$font--heading: 'montserrat';
+$font--size--body: 17px;
+$font--line-height--body: 30px;
 
 $shadow--light: '';
 $shadow--medium: '';

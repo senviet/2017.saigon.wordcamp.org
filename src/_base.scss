@@ -1,9 +1,27 @@
 body{
   font-family: $font--body;
   background: $color--body-background;
+  color: $color--body;
+  font-size: $font--size--body;
+  line-height: $font--line-height--body;
 }
 
 .wrap {
   @include make-container();
   @include make-container-max-widths();
+}
+
+a{
+  color: $color--link;
+  &:hover{
+    color: $color--link-hover;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $font--heading;
+}
+
+p{
+  margin-bottom: 15px;
 }
