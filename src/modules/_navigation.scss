@@ -1,6 +1,25 @@
 .navigation-top{
+  transition: background .3s ease-in-out;
+  box-shadow: $shadow--light;
+  font-size: 16px;
   .wrap{
     @include make-container();
     @include make-container-max-widths();
+  }
+  .main-navigation{
+    .menu-item{
+      a{
+        text-transform: uppercase;
+        @include hover-focus-active{
+          border: none;
+          color: $color--primary;
+        }
+      }
+      &.current-menu-item{
+        a{
+          color: $color--primary;
+        }
+      }
+    }
   }
 }

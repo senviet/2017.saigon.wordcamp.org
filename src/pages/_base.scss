@@ -6,3 +6,14 @@
     }
   }
 }
+.widget a, a{
+  @include plain-hover-focus-active-visited{
+    box-shadow: none !important;
+  }
+}
+
+.widget a{
+  @include hover-focus-active{
+    border-bottom: 1px solid $color--secondary;
+  }
+}

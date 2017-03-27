@@ -1,0 +1,40 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea{
+  border-radius: 4px;
+  background: #F4F4F4;
+  border-color: #b9b9b9;
+  padding: 10px 20px;
+  font-size: 16px;
+  @include plain-hover-focus(){
+    border-color: #DDDDDD;
+    color: #5d5d5d;
+  }
+}
+
+button, input[type="button"], input[type="submit"]{
+  border: 1px solid #DDDDDD;
+  border-radius: 100px;
+  background: #ffffff;
+  color: $color--primary;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: normal;
+  @include hover-focus-active{
+    color: $color--primary;
+    background: lighten($color--primary, 50%);
+  }
+}

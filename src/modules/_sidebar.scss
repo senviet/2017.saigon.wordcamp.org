@@ -3,11 +3,29 @@
     margin-bottom: 50px;
     padding: 30px;
     font-size: $font--size--body;
+    ul{
+        li{
+            border: none;
+            padding: 0;
+            & + li {
+                border-top: 1px solid #ddd;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+        }
+    }
     .widget-title {
-        font-size: 1em;
         border-bottom: 1px solid $color--light-gray;
         padding-bottom: 20px;
         color: $color--secondary;
-        font-size: 14px;
+        @include font-size(14)
+    }
+    a{
+        @include plain-hover-focus-active-visited{
+            box-shadow: none;
+        }
+        @include hover-focus-active{
+            border-bottom: 1px solid $color--secondary;
+        }
     }
 }
