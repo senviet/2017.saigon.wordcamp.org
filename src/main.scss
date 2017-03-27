@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i&subset=vietnamese');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=vietnamese');
 @import "variables";
 @import "mixins";
 @import "base";
 @import "modules/form";
+@import "modules/post";
 @import "modules/navigation";
 @import "modules/site-header";
 @import "modules/sidebar";
