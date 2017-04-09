@@ -1,3 +1,5 @@
+
+
 .page-slug-speakers{
   .entry-header{
     float: none !important;
@@ -14,21 +16,24 @@
     grid-auto-rows: minmax(20px, auto);
     grid-auto-flow: row;
     .wcorg-speaker{
+      border-radius: 2px;
       box-shadow: $shadow--light;
       padding: 30px;
       font-size: $font--size--body;
       position: relative;
       cursor: pointer;
       margin-bottom: 50px;
+      > h2{
+        text-align: center;
+      }
       .wcorg-speaker-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         img{
-          float: left;
-          margin-right: 25px;
-        }
-        &:after{
-          display: block;
-          content: " ";
-          clear: both;
+          border-radius: 50%;
+          margin-bottom: 25px;
         }
       }
     }
