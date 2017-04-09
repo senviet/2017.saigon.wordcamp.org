@@ -1,0 +1,51 @@
+.page-slug-schedule {
+    .entry-header {
+        width: 100% !important;
+    }
+    .entry-content {
+        float: none !important;
+        width: 100% !important;
+        .wcpt-schedule {
+            box-shadow: $shadow--light;
+            span.wcpt-session-title {
+                font-size: 15px;
+            }
+            a.wcpt-session-title {
+               font-weight: 700;
+               color: $color--primary;
+               &:hover {
+                    color: #646c77;
+               }
+            }
+            th, tr, td {
+                padding: 15px 30px !important;
+                @media all and (max-width: 414px) {
+                    padding: 15px !important;
+                    border: none;
+                }
+            }
+            td {
+                border-right: 1px solid #ccc;
+                &:last-child {
+                    border: none;
+                }
+                @media all and (max-width: 414px) {
+                    border: none;
+                }
+            }
+            tr {
+                border-bottom: 1px solid #ccc;
+                &:last-child {
+                    border: none;
+                }
+            }
+            thead {
+                background-color: $color--primary;
+                color: #fff;
+                th {
+                    border: none;
+                }
+            }
+        }
+    }
+}
